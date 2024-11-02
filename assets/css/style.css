@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #fff;
 }
 
@@ -19,6 +19,7 @@ button {
   background-color: transparent;
   transition: background-color 0.3s ease;
   padding: 1rem 0;
+  height: 50px;
 }
 
 #navbar.scrolled {
@@ -40,10 +41,18 @@ button {
 }
 
 @media (max-width: 992px) {
+  #navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    height: 70px;
+  }
+
   #navbarNav {
     background-color: #333;
-    width: 100%;
+    width: 1200px;
+    padding: 0;
   }
+
   .navbar-brand img {
     max-height: 40px;
   }
@@ -51,10 +60,6 @@ button {
   .navbar-nav .nav-link {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-  }
-
-  #about p{
-    font-size: 14px;
   }
 }
 
@@ -69,6 +74,7 @@ button {
   height: 100vh;
   color: #fff;
 }
+
 #hero .overlay {
   position: absolute;
   top: 0;
@@ -85,6 +91,22 @@ button {
 .hero-buttons .btn {
   padding: 15px;
   border-radius: 0;
+}
+
+.scroll-down-btn {
+  position: fixed;
+  bottom: 30px;
+  z-index: 1000;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.scroll-down-btn:hover {
+  background-color: #0056b3;
 }
 
 #about {
@@ -124,6 +146,45 @@ button {
 
 .about-box p {
   color: #666;
+}
+
+@media (max-width: 992px) {
+  #about h2 {
+    margin-top: 20px;
+  }
+  #about p {
+    font-size: 14px;
+  }
+}
+
+#services {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+#services h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  #services h2 {
+    margin-top: 20px;
+  }
+
+  #services {
+    padding: 180px 0;
+    margin-top: 100px;
+  }
+
+  #services p {
+    font-size: 14px;
+  }
+}
+
+#destinations {
+  padding: 60px 0;
 }
 .destination-card {
   position: relative;
@@ -165,16 +226,42 @@ button {
   margin-top: 10px;
 }
 
+#destinations h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  #destinations h2 {
+    margin-top: 20px;
+  }
+
+  #destinations p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 576px) {
   .destination-card img {
     padding: 5px 0;
   }
 }
 
+#packages {
+  padding: 60px 0;
+}
+
 .package-card {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   transition: transform 0.3s;
+}
+
+#packages h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
 }
 .package-card:hover {
   transform: translateY(-5px);
@@ -186,15 +273,25 @@ button {
   font-weight: bold;
 }
 
+@media (max-width: 992px) {
+  #packages h2 {
+    margin-top: 20px;
+  }
+
+  #packages p {
+    font-size: 14px;
+  }
+}
+
 #booking {
   border-radius: 10px;
   padding: 40px 20px;
 }
 
 #booking h2 {
-  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  color: #333;
 }
 
 .form-control {
@@ -223,10 +320,40 @@ label {
   background-color: #0056b3;
 }
 
+@media (max-width: 992px) {
+  #booking h2 {
+    margin-top: 20px;
+  }
+
+  #booking p {
+    font-size: 14px;
+  }
+}
+
 #contact .container {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
   background-color: white;
+}
+
+#contact h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+@media (max-width: 992px) {
+  #contact h2 {
+    margin-top: 20px;
+  }
+
+  #contact p {
+    font-size: 14px;
+  }
+
+  #contactInfo {
+    padding-bottom: 10px;
+  }
 }
 
 footer {
